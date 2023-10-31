@@ -56,7 +56,7 @@ const initialValuesRegister = {
       console.log(key, value);
     });
     const savedUserResponse = await fetch(
-      `http://localhost:3001/users/${user._id}/changeProfile`,
+      `https://linkup-etey.onrender.com/users/${user._id}/changeProfile`,
       {
         method: "PATCH",
         body: formData,

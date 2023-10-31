@@ -37,7 +37,7 @@ import {
     const primary = palette.primary.main;
   
     const patchLike = async () => {
-      const response = await fetch(`http://localhost:3001/posts/${postId}/like`, {
+      const response = await fetch(`https://linkup-etey.onrender.com/posts/${postId}/like`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -52,7 +52,7 @@ import {
   
     const deletePost = async () => {
         try {
-          const response = await fetch(`http://localhost:3001/posts/${postId}`, {
+          const response = await fetch(`https://linkup-etey.onrender.com/posts/${postId}`, {
             method: "DELETE",
             headers: {
               Authorization: `Bearer ${token}`,
@@ -90,7 +90,7 @@ import {
             height="auto"
             alt="post"
             style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-            src={`http://localhost:3001/assets/${picturePath}`}
+            src={`https://linkup-etey.onrender.com/assets/${picturePath}`}
           />
         )}
         {videoPath && (
@@ -99,9 +99,9 @@ import {
             width="100%"
             style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
           >
-            <source src={`http://localhost:3001/assets/${videoPath}`} type="video/mp4" />
-            <source src={`http://localhost:3001/assets/${videoPath}`} type="video/quicktime" />
-            <source src={`http://localhost:3001/assets/${videoPath}`} type="video/x-matroska" />
+            <source src={`https://linkup-etey.onrender.com/assets/${videoPath}`} type="video/mp4" />
+            <source src={`https://linkup-etey.onrender.com/assets/${videoPath}`} type="video/quicktime" />
+            <source src={`https://linkup-etey.onrender.com/assets/${videoPath}`} type="video/x-matroska" />
             Your browser does not support the video tag.
           </video>
         )}

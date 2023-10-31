@@ -47,7 +47,7 @@ const MyPostWidget = ({ picturePath, videoPath }) => {
     if (image) {
       formData.append("picture", image);
       formData.append("picturePath", image.name);
-      const response = await fetch(`http://localhost:3001/posts/image`, {
+      const response = await fetch(`https://linkup-etey.onrender.com/posts/image`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
         body: formData,
@@ -63,7 +63,7 @@ const MyPostWidget = ({ picturePath, videoPath }) => {
         formData.append("video", video);
         formData.append("videoPath", video.name);
       }
-      const response = await fetch(`http://localhost:3001/posts/video`, {
+      const response = await fetch(`https://linkup-etey.onrender.com/posts/video`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
         body: formData,

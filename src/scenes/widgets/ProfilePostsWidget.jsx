@@ -10,7 +10,7 @@ const ProfilePostsWidget = ({ userId, ogID }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `http://localhost:3001/posts/${userId}/posts`,
+      `https://linkup-etey.onrender.com/posts/${userId}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

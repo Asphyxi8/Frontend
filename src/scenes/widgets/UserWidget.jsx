@@ -23,7 +23,7 @@ const UserWidget = ({ userId, picturePath }) => {
   const main = palette.neutral.main;
 
   const getUser = async () => {
-    const response = await fetch(`http://localhost:3001/users/${userId}`, {
+    const response = await fetch(`https://linkup-etey.onrender.com/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -53,7 +53,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
   const patchViews = async () => {
     console.log("Patch Views called");
-    const response = await fetch(`http://localhost:3001/users/${userId}/views`, {
+    const response = await fetch(`https://linkup-etey.onrender.com/users/${userId}/views`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,

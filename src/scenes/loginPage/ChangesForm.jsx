@@ -58,7 +58,7 @@ const initialValuesRegister = {
       console.log(key, value);
     });
     const savedUserResponse = await fetch(
-      "http://localhost:3001/auth/register",
+      "https://linkup-etey.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
